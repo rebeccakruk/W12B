@@ -15,32 +15,39 @@
             <h1>Welcome to the Random Activity Generator</h1>
             <h4>... where boredom goes to die!</h4>
         </header>
-        <h3>By Category: RANDOM</h3>
-        <div id="byRandom">
-            <button class="glowFancy" id="randomActivity">Click to Activate!</button>
-            <div class="results" id="randomResult"></div>
-        </div>
-        <h3>By Category: Type</h3>
-        <div id="dropMenu">
-            <select name="type" class="glowFancy" id="dropdown">
-                <option value="top">Select One</option>
-                <option value="education" id="edu">Education</option>
-                <option value="recreational" id="rec">Recreational</option>
-                <option value="social" id="soc">Social</option>
-                <option value="diy" id="diy">DIY</option>
-                <option value="charity" id="char">Charity</option>
-                <option value="cooking" id="cook">Cooking</option>
-                <option value="relaxation" id="relax">Relaxation</option>
-                <option value="music" id="music">Music</option>
-                <option value="busywork" id="busy">Busywork</option>
-            </select>
-            <div class="results" id="typeResult"></div>
-        </div>
-        <h3>By Category: Number of Participants</h3>
-        <div id="howManyPeople">
-            <input type="number" id="participants" min="1" max="21" />
-            <button class="glowFancy" id="submit">Submit</button>
-            <div class="results" id="participantResults"></div>
-        </div>
+
+        <categories id="waysToSelect">
+            <div id="byRandom">
+                <h3>By Activity</h3>
+                <button class="glowFancy" id="randomActivity">Click to Activate!</button>
+            </div>
+            <div id="dropMenu">
+                <h3>By Type</h3>
+                <select name="type" class="glowFancy" id="dropdown">
+                    <option value="top">Select One</option>
+                    <option value="education" id="edu">Education</option>
+                    <option value="recreational" id="rec">Recreational</option>
+                    <option value="social" id="soc">Social</option>
+                    <option value="diy" id="diy">DIY</option>
+                    <option value="charity" id="char">Charity</option>
+                    <option value="cooking" id="cook">Cooking</option>
+                    <option value="relaxation" id="relax">Relaxation</option>
+                    <option value="music" id="music">Music</option>
+                    <option value="busywork" id="busy">Busywork</option>
+                </select>
+            </div>
+            <div id="howManyPeople">
+                <h3>
+                    By Number of People
+                    <input type="number" id="participants" min="1" max="8" />
+                </h3>
+                <button class="glowFancy" id="submit">Submit</button>
+            </div>
+        </categories>
+        <main class="results">
+            <div id="randomResult"></div>
+            <div id="typeResult"></div>
+            <div id="participantResults"></div>
+        </main>
     </body>
 </html>
